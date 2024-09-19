@@ -1,4 +1,3 @@
-import { configDotenv } from "dotenv";
 import { mailtrapClient, mailtrapSender } from "../mailtrap/mailtrap.js";
 import { VERIFICATION_EMAIL_TEMPLATE } from "../mailtrap/templates.js";
 import { nlUser } from "../models/NewsletterUser.js";
@@ -150,8 +149,8 @@ export const login = async(req, res) => {
     }
 }
 
-export const addToNewsletter = async (res, req) => {
-    const email = req.body
+export const addToNewsletter = async (req, res) => {
+    const {email} = req.body
 
     const user =  new nlUser({email})
 
