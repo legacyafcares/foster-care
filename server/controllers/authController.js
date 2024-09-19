@@ -8,6 +8,20 @@ import jwt from 'jsonwebtoken'
 import dotenv from "dotenv";
 
 dotenv.config()
+
+const generateCookieAndSetToken = async (res, userId) => {
+    const token = jwt.sign({userId}, process.env.JWT_SECRET, {
+        expiresIn: '7d'
+    })
+    res.cookie('token', token, {
+        httpOnly: true,
+        sameSite: 'strict',
+        secure: process.env.NODE_ENV === 'production',
+        maxAge: 7 * 24 * 60 * 60 * 1000
+    })
+    return token
+}
+
 export const signup = async (req, res) => {
     const sendVerificationEmail =  async (email, token) => {
         const recipient = [{email}]        
@@ -24,18 +38,7 @@ export const signup = async (req, res) => {
         }
     }
 
-    const generateCookieAndSetToken = async (res, userId) => {
-        const token = jwt.sign({userId}, process.env.JWT_SECRET, {
-            expiresIn: '7d'
-        })
-        res.cookie('token', token, {
-            httpOnly: true,
-            sameSite: 'strict',
-            secure: process.env.NODE_ENV === 'production',
-            maxAge: 7 * 24 * 60 * 60 * 1000
-        })
-        return token
-    }
+    
 
 
     const {name, email, password} = req.body
@@ -103,8 +106,8 @@ export const verifyEmail = async(req, res) => {
         if (!user) return res.status(400).json({message: 'Invalid or expired verification code.'})
         
         user.isVerified = true    
-        user.verificationToken = ''   
-        user.verificationTokenExpiresAt = '' 
+        user.verificationToken = undefined  
+        user.verificationTokenExpiresAt = undefined
         
         await user.save()
 
@@ -117,7 +120,48 @@ export const verifyEmail = async(req, res) => {
     }
 }
 
-export const login = (req, res) => {}
+export const login = async(req, res) => {
+    try {
+        const {email, password} = req.body
+
+        const user = await User.findOne({email})
+
+        if(!user) {
+            res.status(400).json({message: "User not found."})
+        }
+
+        // check password
+        const storedPwd = await bcryptjs.compare(password, user.password)
+
+        if (!storedPwd) return res.status(400).json({message: "Invalid password."})
+        
+        // jwt
+        generateCookieAndSetToken(res, user._id)
+
+        //update last login date
+        user.lastLogin = new Date()
+        
+        await user.save()
+
+        res.status(200).json({message: "Logged in successfully."})
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export const addToNewsletter = async (res, req) => {
+    const email = req.body
+
+    const user =  new nlUser({email})
+
+    await user.save()
+
+    res.status(200).json({message: 'User added successfully.'})
+}
 
 
-export const logout = (req, res) => {}
+export const logout = (req, res) => {
+    res.clearCookie('token')
+    res.status(200).json({message: 'Logged out successfully.'})
+}
