@@ -9,7 +9,14 @@ type InputProps ={
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void,
 }
 const InputField = ({...props}: InputProps) => {
-  return <Input borderColor={'black'} focusBorderColor='orange.600'/>
+  return (<Input 
+    borderColor={'black'} 
+    focusBorderColor='orange.600' 
+    variant={'flushed'} 
+    size={'lg'}
+    className='w-3/5' 
+    {...props}
+  />)
 }
 
 export default InputField
