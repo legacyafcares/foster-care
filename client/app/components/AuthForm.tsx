@@ -28,7 +28,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
   const handleSignUp = async () => {
     try {
       await signup(name, email, password)
-      router.push('/verify-email')
+      router.push('/auth/verify-email')
     } catch (error) {
       console.log(error)
     }
