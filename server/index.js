@@ -5,6 +5,8 @@ import authRoutes from './routes/authRoutes.js'
 import cors from 'cors'
 import {corsOptions} from './config/corsOptions.js'
 
+// backend live on Render => https://foster-care.onrender.com
+
 dotenv.config()
 
 const app = express()

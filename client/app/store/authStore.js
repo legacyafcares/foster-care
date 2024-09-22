@@ -4,7 +4,7 @@ import dotenv  from 'dotenv'
 
 dotenv.config()
 
-const API_URL = process.env.NODE_ENV === 'development' ? 'http://localhost:5000/auth' : '/auth'
+const API_URL = process.env.NODE_ENV === 'development' ? 'http://localhost:5000/auth' : 'https://foster-care.onrender.com/auth'
 
 axios.defaults.withCredentials = true;
 
