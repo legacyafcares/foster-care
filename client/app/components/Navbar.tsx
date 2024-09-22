@@ -36,7 +36,7 @@ const Navbar = () => {
                 <MenuList color={'black'}>
                     {navlinks.map((l, index) => (
                         <Link href={l.url} key={index}>
-                            <MenuItem className='text-black hover:text-amber-500 transition ease-in-out duration-700 hover:scale-105'>{l.name}</MenuItem>
+                            <MenuItem className='text-black hover:text-red-500 transition ease-in-out duration-700 hover:scale-105'>{l.name}</MenuItem>
                         </Link>
                     ))}
                 </MenuList>
