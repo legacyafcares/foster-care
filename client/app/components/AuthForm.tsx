@@ -1,5 +1,5 @@
 'use client'
-import { Box, Button, Heading, VStack } from '@chakra-ui/react'
+import { Button, Heading, VStack } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import InputField from './InputField'
 import Link from 'next/link';
@@ -16,7 +16,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
   const [password, setPassword] = useState('')
   const [confirmPwd, setConfirmPwd] = useState('')
 
-  const { signup, login, error, isLoading } = useAuthStore()
+  const { signup, login, isLoading } = useAuthStore()
 
   const router = useRouter() // Updated import
 
@@ -102,7 +102,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
 
       <Link href={type === 'Sign In' ? '/auth/signup' : '/auth/login'}>
         {type === 'Sign In' ? 
-        <p>Don't have an account yet? <span className='text-orange-600 font-bold'>Sign up</span></p> :
+        <p>Don&apos;t have an account yet? <span className='text-orange-600 font-bold'>Sign up</span></p> :
         <p>Have an account already? <span className='text-orange-600 font-bold'>Log In</span></p>}
       </Link>
     </VStack>

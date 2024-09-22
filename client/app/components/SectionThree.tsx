@@ -25,7 +25,7 @@ const SectionThree = () => {
   return (
     <section className='min-h-screen w-full flex flex-col justify-around items-center px-6'>
         <div className="lg:w-[50%] w-[75%] mx-auto mt-6">
-            <h1 className="font-extrabold lg:text-5xl text-3xl mb-6 lg:text-center">Experience Compassionate Care Tailored to Your Loved One's Needs</h1>
+            <h1 className="font-extrabold lg:text-5xl text-3xl mb-6 lg:text-center">Experience Compassionate Care Tailored to Your Loved One&apos;s Needs</h1>
         </div>
         <div className='lg:w-[80%] md:w-[60%] w-full h-fit grid lg:flex lg:items-center lg:justify-evenly gap-6'>
             {cards.map((c,index) => (
