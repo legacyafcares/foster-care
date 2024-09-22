@@ -24,12 +24,12 @@ const SectionThree = () => {
     ]
   return (
     <section className='min-h-screen w-full flex flex-col justify-around items-center px-6'>
-        <div className="w-[50%] mx-auto">
-            <h1 className="font-extrabold text-5xl text-center">Experience Compassionate Care Tailored to Your Loved One's Needs</h1>
+        <div className="lg:w-[50%] w-[75%] mx-auto mt-6">
+            <h1 className="font-extrabold lg:text-5xl text-3xl mb-6 lg:text-center">Experience Compassionate Care Tailored to Your Loved One's Needs</h1>
         </div>
-        <div className='w-[80%] h-fit flex items-center justify-evenly gap-6'>
+        <div className='lg:w-[80%] md:w-[60%] w-full h-fit grid lg:flex lg:items-center lg:justify-evenly gap-6'>
             {cards.map((c,index) => (
-                <Card key={index} className='h-[300px] flex flex-col'>
+                <Card key={index} className='lg:h-[300px] h-fit flex flex-col'>
                     <CardHeader>
                         <Heading size='md'>{c.main}</Heading>
                     </CardHeader>
