@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className='relative w-full h-full'>
       <video
-        src={"/hero.mp4" || '/hero-mobile.mp4'}
+        src={"/hero.mp4"}
         autoPlay
         loop
         muted
