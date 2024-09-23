@@ -17,7 +17,7 @@ const SectionThree = () => {
         },
         {
             main: 'Comprehensive Support for Families and Their Elderly Loved Ones',
-            p: 'Our team is here to support both residents and their families every step of the way.',
+            p: 'Our team is here to support both residents and their families every step of the way at all times.',
             linkText: 'Contact',
             link: '/contact'
         },
