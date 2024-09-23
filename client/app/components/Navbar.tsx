@@ -7,7 +7,7 @@ const Navbar = () => {
     const navlinks = [
         {
             name: 'Our Services',
-            url: '/services'
+            url: '/our-services'
         },
         {
             name: 'About Us',
