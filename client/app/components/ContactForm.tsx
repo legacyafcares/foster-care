@@ -14,7 +14,7 @@ const ContactForm = () => {
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value) 
     const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value) 
 
-    const handleSubmit = async (e: { preventDefault: () => void }) => {
+    const handleSubmit = async (e: React.FormEvent) => {
       try {
         e.preventDefault()
         await axios.post("https://foster-care.onrender.com/auth/add-to-db")
