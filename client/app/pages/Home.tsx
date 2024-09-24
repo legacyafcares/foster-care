@@ -6,6 +6,7 @@ import SectionThree from '../components/SectionThree'
 import Reviews from '../components/Reviews'
 import HomeContact from '../components/HomeContact'
 import Subscribe from '../components/Subscribe'
+import ContactForm from '../components/ContactForm'
 
 const Home = () => {
   return (
@@ -14,8 +15,9 @@ const Home = () => {
       <Hero/>
       <SectionTwo/>
       <SectionThree/>
-      <Reviews/>
       <HomeContact/>
+      <Reviews/>
+      <ContactForm/>
       <Subscribe/>
     </section>
   )

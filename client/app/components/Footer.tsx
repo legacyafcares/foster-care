@@ -3,17 +3,17 @@ import React from 'react'
 
 const Footer = () => {
     const quickLinks = [
-        {
-            name: 'About Us',
-            url: '/about-us'
-        },
+        // {
+        //     name: 'About Us',
+        //     url: '/about-us'
+        // },
         {
             name: 'Our Services',
-            url: '/services'
+            url: '#services'
         },
         {
             name: 'Contact Us',
-            url: '/contact'
+            url: '#contact'
         }
     ]
     const socialLinks = [
@@ -45,7 +45,7 @@ const Footer = () => {
         }
     ]
   return (
-    <footer className='md:h-[200px] h-screen px-7 bg-red-900 flex max-md:flex-col justify-evenly md:items-center text-white pb-7'>
+    <footer className='md:h-[200px] h-screen px-7 bg-red-800 flex max-md:flex-col justify-evenly md:items-center text-white pb-7'>
         <h1 className='font-extrabold text-3xl'>SOME NAME</h1>
         <div className='grid gap-1 h-[100px] pt-4'>
             <h1 className="font-extrabold md:mb-5 mb-3">Quick Links</h1>

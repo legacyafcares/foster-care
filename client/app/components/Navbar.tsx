@@ -7,15 +7,15 @@ const Navbar = () => {
     const navlinks = [
         {
             name: 'Our Services',
-            url: '/our-services'
+            url: '#services'
         },
-        {
-            name: 'About Us',
-            url: '/about-us'
-        },
+        // {
+        //     name: 'About Us',
+        //     url: '/about-us'
+        // },
         {
             name: 'Contact Us',
-            url: '/contact'
+            url: '#contact'
         },
     ]
   return (

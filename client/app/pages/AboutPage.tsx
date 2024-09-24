@@ -1,11 +1,11 @@
 import React from 'react'
 
-const page = () => {
+const AboutPage = () => {
   return (
     <section className='w-full h-screen'>
-      About us nini nini
+      
     </section>
   )
 }
 
-export default page
+export default AboutPage

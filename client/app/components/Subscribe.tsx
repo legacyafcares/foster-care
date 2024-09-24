@@ -21,22 +21,18 @@ const Subscribe = () => {
     const handleChange = (e: { target: { value: React.SetStateAction<string> } }) => setEmail(e.target.value)
 
   return (
-    <>
-        <hr className='border border-red-200 w-4/5 mx-auto mt-12'/>
-        <form onSubmit={handleSubmit} className='flex max-md:flex-col justify-center md:items-center w-4/5 mx-auto gap-8 mt-12'>
-            <div className='mr-auto'>
-                <p className='font-bold'>Subscribe to updates about our services and community events.</p>
-            </div>
-            <InputField 
-                type={'email'} 
-                placeholder='Subscribe to our newsletter'
-                value={email}
-                onChange={handleChange} 
-            />
-            <Button type="submit" p={3} colorScheme='red' w={150} className='max-md:mx-auto'>Subscribe</Button>
-        </form>
-        <hr className='border border-red-200 w-4/5 mx-auto my-12'/>
-    </>
+    <form onSubmit={handleSubmit} className='flex max-md:flex-col justify-center md:items-center w-4/5 mx-auto gap-8 mb-12'>
+        <div className='mr-auto'>
+            <p className='font-bold'>Subscribe to updates about our services and community events.</p>
+        </div>
+        <InputField 
+            type={'email'} 
+            placeholder='Subscribe to our newsletter'
+            value={email}
+            onChange={handleChange} 
+        />
+        <Button type="submit" p={3} colorScheme='red' w={150} className='max-md:mx-auto'>Subscribe</Button>
+    </form>
   )
 }
 
