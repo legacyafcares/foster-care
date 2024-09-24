@@ -155,7 +155,7 @@ export const addToNewsletter = async (req, res) => {
 
     if(!email) return res.status(400).json({message: 'Email is required.'})
 
-    const existingUser = await nlUser.findOne({email})
+    const existingUser = await NlUser.findOne({email})
 
     if (existingUser) return res.status(400).json({message: "User already exists"})
     
