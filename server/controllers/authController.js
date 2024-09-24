@@ -2,7 +2,7 @@ import { mailtrapClient, mailtrapSender } from "../mailtrap/mailtrap.js";
 import { VERIFICATION_EMAIL_TEMPLATE } from "../mailtrap/templates.js";
 import { NlUser } from "../models/NewsletterUser.js";
 import { User } from "../models/User.js";
-import { contactMessage } from "../models/ContactMessage.js";
+import { ContactMessage } from "../models/ContactMessage.js";
 import bcryptjs from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import dotenv from "dotenv";
@@ -171,7 +171,7 @@ export const addMessageToDb = async (req, res,) => {
 
     if (!name || !email || !message) return res.status(400).json({message: "Fields cannot be empty."})
 
-    const dbMessage = new contactMessage({name, email, message})    
+    const dbMessage = new ContactMessage({name, email, message})    
 
     await dbMessage.save()
 
