@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import InputField from './InputField'
 import { Button } from '@chakra-ui/react'
 import Image from 'next/image'
+import axios from 'axios'
 
 const ContactForm = () => {
     const [name, setName] = useState('')
@@ -13,8 +14,13 @@ const ContactForm = () => {
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value) 
     const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value) 
 
-    const handleSubmit = async () => {
-
+    const handleSubmit = async (e: { preventDefault: () => void }) => {
+      try {
+        e.preventDefault()
+        await axios.post("https://foster-care.onrender.com/auth/add-to-db")
+      } catch (error) {
+        console.log(error)        
+      }
     }
   return (
     <section className='w-full h-screen flex gap-3 justify-center items-center' id='contact'>
