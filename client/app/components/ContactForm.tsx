@@ -5,20 +5,13 @@ import { Button } from '@chakra-ui/react'
 import Image from 'next/image'
 
 const ContactForm = () => {
-    const [input, setInput] = useState({
-        name: '',
-        email: '',
-        message: ''
-    })
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
 
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const {name, value} = e.target
-        
-        setInput(prevState => ({
-            ...prevState,
-            [name]: value
-        }))
-    }
+    const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => setName(e.target.value) 
+    const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value) 
+    const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value) 
 
     const handleSubmit = async () => {
 
@@ -31,20 +24,20 @@ const ContactForm = () => {
             <InputField 
                 type={'text'} 
                 placeholder='Name'
-                value={input.name} 
-                onChange={handleInputChange}   
+                value={name} 
+                onChange={handleNameChange}   
             />
             <InputField 
                 type={'email'} 
                 placeholder='Email address'
-                value={input.name} 
-                onChange={handleInputChange}   
+                value={email} 
+                onChange={handleEmailChange}   
             />
             <textarea 
                 name='message'
                 placeholder='Enter your message'
-                value={input.message}
-                onChange={handleInputChange}   // same handler for the textarea
+                value={message}
+                onChange={handleMessageChange}   // same handler for the textarea
                 className='w-full h-32 p-2 border border-gray-300 rounded-md my-5'
             />
         </div>
