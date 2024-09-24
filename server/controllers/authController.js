@@ -2,6 +2,7 @@ import { mailtrapClient, mailtrapSender } from "../mailtrap/mailtrap.js";
 import { VERIFICATION_EMAIL_TEMPLATE } from "../mailtrap/templates.js";
 import { nlUser } from "../models/NewsletterUser.js";
 import { User } from "../models/User.js";
+import { contactMessage } from "../models/ContactMessage.js";
 import bcryptjs from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import dotenv from "dotenv";
@@ -159,6 +160,17 @@ export const addToNewsletter = async (req, res) => {
     res.status(200).json({message: 'User added successfully.'})
 }
 
+export const addMessageToDb = async (req, res) => {
+    const {name, email, message} = req.body
+
+    if (!name || !email || !message) return res.status(400).json({message: "Fields cannot be empty."})
+
+    const dbMessage = new contactMessage({name, email, message})    
+
+    await dbMessage.save()
+
+    res.status(201).json({message: "Message added successfully to database."})
+}
 
 export const logout = (req, res) => {
     res.clearCookie('token')
