@@ -11,7 +11,7 @@ type InputProps ={
 const InputField = ({...props}: InputProps) => {
   return (<Input 
     borderColor={'black'} 
-    focusBorderColor='orange.600' 
+    focusBorderColor='red.600' 
     variant={'flushed'} 
     size={'lg'}
     className='w-3/5' 
