@@ -152,15 +152,15 @@ export const login = async(req, res) => {
 
 export const addToNewsletter = async (req, res) => {
     const {email} = req.body
-
-    const user =  new nlUser({email})
+    
+    const user =  new nlUser(email)
 
     await user.save()
 
     res.status(200).json({message: 'User added successfully.'})
 }
 
-export const addMessageToDb = async (req, res) => {
+export const addMessageToDb = async (req, res,) => {
     const {name, email, message} = req.body
 
     if (!name || !email || !message) return res.status(400).json({message: "Fields cannot be empty."})
