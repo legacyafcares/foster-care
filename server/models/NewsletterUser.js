@@ -9,4 +9,4 @@ const newsletterUserSchema = new mongoose.Schema(
     },
      {timestamps: true})
 
-export const nlUser = mongoose.model('nlUser', newsletterUserSchema)
+export const NlUser = mongoose.model('nlUser', newsletterUserSchema)

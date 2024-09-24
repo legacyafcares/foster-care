@@ -1,6 +1,6 @@
 import { mailtrapClient, mailtrapSender } from "../mailtrap/mailtrap.js";
 import { VERIFICATION_EMAIL_TEMPLATE } from "../mailtrap/templates.js";
-import { nlUser } from "../models/NewsletterUser.js";
+import { NlUser } from "../models/NewsletterUser.js";
 import { User } from "../models/User.js";
 import { contactMessage } from "../models/ContactMessage.js";
 import bcryptjs from 'bcryptjs'
@@ -159,7 +159,7 @@ export const addToNewsletter = async (req, res) => {
 
     if (existingUser) return res.status(400).json({message: "User already exists"})
     
-    const user =  new nlUser({email})
+    const user =  new NlUser({email})
 
     await user.save()
 
