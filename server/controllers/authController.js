@@ -159,7 +159,7 @@ export const addToNewsletter = async (req, res) => {
 
     if (existingUser) return res.status(400).json({message: "User already exists"})
     
-    const user =  new nlUser(email)
+    const user =  new nlUser({email})
 
     await user.save()
 
@@ -171,7 +171,7 @@ export const addMessageToDb = async (req, res,) => {
 
     if (!name || !email || !message) return res.status(400).json({message: "Fields cannot be empty."})
 
-    const dbMessage = new contactMessage(name, email, message)    
+    const dbMessage = new contactMessage({name, email, message})    
 
     await dbMessage.save()
 
