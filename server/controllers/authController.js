@@ -165,7 +165,7 @@ export const addMessageToDb = async (req, res) => {
 
     if (!name || !email || !message) return res.status(400).json({message: "Fields cannot be empty."})
 
-    const dbMessage = new contactMessage({name, email, message})    
+    const dbMessage = new contactMessage(name, email, message)    
 
     await dbMessage.save()
 
