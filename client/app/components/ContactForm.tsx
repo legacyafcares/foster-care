@@ -24,8 +24,8 @@ const ContactForm = () => {
     }
   return (
     <section className='w-full h-screen flex gap-3 justify-center items-center' id='contact'>
-      <form onSubmit={handleSubmit} className='w-2/5 left-0 ml-16 px-3'>
-        <h1 className="text-3xl font-bold">Get In Touch With Us</h1>
+      <form onSubmit={handleSubmit} className='lg:w-2/5 left-0 lg:ml-16 px-3'>
+        <h1 className="lg:text-3xl text-2xl font-bold">Get In Touch With Us</h1>
         <div className='flex flex-col gap-3 items-start'>
             <InputField 
                 type={'text'} 
@@ -46,10 +46,10 @@ const ContactForm = () => {
                 onChange={handleMessageChange}   // same handler for the textarea
                 className='w-full h-32 p-2 border border-gray-300 rounded-md my-5'
             />
+        <Button type="submit" colorScheme='red' className='mx-auto'>Send Message</Button>
         </div>
-        <Button type="submit" colorScheme='red'>Send Message</Button>
       </form>
-      <div className='h-full w-1/2 grid place-content-center'>
+      <div className='h-full w-1/2 grid place-content-center max-md:hidden'>
         <Image src={'/verify.jpg'} alt={'Contact Us'} width={1000} height={1000} className='rounded-md'/>
       </div>
     </section>

@@ -20,13 +20,16 @@ const Navbar = () => {
     ]
   return (
         <div className='flex justify-between items-center lg:px-16 px-8 py-2 absolute z-10 text-white w-full'>
-        <Link href={'/'} className='mr-auto'>
-            <h1 className='lg:text-4xl text-2xl font-bold'>SOME NAME</h1>
+        <Link href={'/'}>
+            <h1 className='lg:text-4xl text-2xl font-bold'>Legacy AFC</h1>
         </Link>
         <div className="max-sm:hidden">
             {navlinks.map((l, index) => (
                 <Link href={l.url} key={index} className='ml-10 text-lg hover:text-red-400 transition ease-in-out duration-700 hover:scale-95'>{l.name}</Link>
             ))}
+        </div>
+        <div>
+            <h1 className='text-xl font-bold ml-6 max-md:hidden'>+1 860-994-8220</h1>
         </div>
         <div className='md:hidden'>
             <Menu>
