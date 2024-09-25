@@ -89,7 +89,7 @@ export const verifyEmail = async(req, res) => {
                 to: recipient,
                 template_uuid: "2770ae3a-6ed6-427b-a317-2cbf6e8b655d",
                 template_variables: {
-                "company_info_name": "Some_Company_Name_Yet_To_Be_Determined",
+                "company_info_name": "Legacy AFC",
                 "name": name
                 }
             })
