@@ -16,20 +16,20 @@ const Footer = () => {
             url: '#contact'
         }
     ]
-    const socialLinks = [
-        {
-            name: 'Facebook',
-            url: '/'
-        },
-        {
-            name: 'Twitter',
-            url: '/'
-        },
-        {
-            name: 'Instagram',
-            url: '/'
-        }
-    ]
+    // const socialLinks = [
+    //     {
+    //         name: 'Facebook',
+    //         url: '/'
+    //     },
+    //     {
+    //         name: 'Twitter',
+    //         url: '/'
+    //     },
+    //     {
+    //         name: 'Instagram',
+    //         url: '/'
+    //     }
+    // ]
     const updateLinks = [
         {
             name: 'Newsletter Sign Up',
