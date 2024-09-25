@@ -16,7 +16,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
   const [password, setPassword] = useState('')
   const [confirmPwd, setConfirmPwd] = useState('')
 
-  const { signup, login, isLoading } = useAuthStore()
+  const { signup, isLoading } = useAuthStore()
 
   const router = useRouter() // Updated import
 
@@ -34,22 +34,21 @@ const AuthForm = ({ type }: AuthFormProps) => {
     }
   }
 
-  const handleLogin = async () => {
-    try {
-      await login(email, password)
-      router.push('/')
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  // const handleLogin = async () => {
+  //   try {
+  //     await login(email, password)
+  //     router.push('/')
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault() // Prevent default form submission
     try {
       if (type === 'Sign Up') {
         await handleSignUp()
-      } else {
-        await handleLogin()
+        router.push('/')
       }
     } catch (error) {
       console.error('Error:', error)

@@ -120,35 +120,35 @@ export const verifyEmail = async(req, res) => {
     }
 }
 
-export const login = async(req, res) => {
-    try {
-        const {email, password} = req.body
+// export const login = async(req, res) => {
+//     try {
+//         const {email, password} = req.body
 
-        const user = await User.findOne({email})
+//         const user = await User.findOne({email})
 
-        if(!user) {
-            res.status(400).json({message: "User not found."})
-        }
+//         if(!user) {
+//             res.status(400).json({message: "User not found."})
+//         }
 
-        // check password
-        const storedPwd = await bcryptjs.compare(password, user.password)
+//         // check password
+//         const storedPwd = await bcryptjs.compare(password, user.password)
 
-        if (!storedPwd) return res.status(400).json({message: "Invalid password."})
+//         if (!storedPwd) return res.status(400).json({message: "Invalid password."})
         
-        // jwt
-        generateCookieAndSetToken(res, user._id)
+//         // jwt
+//         generateCookieAndSetToken(res, user._id)
 
-        //update last login date
-        user.lastLogin = new Date()
+//         //update last login date
+//         user.lastLogin = new Date()
         
-        await user.save()
+//         await user.save()
 
-        res.status(200).json({message: "Logged in successfully."})
+//         res.status(200).json({message: "Logged in successfully."})
 
-    } catch (error) {
-        console.log(error)
-    }
-}
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
 
 export const addToNewsletter = async (req, res) => {
     const {email} = req.body
@@ -178,7 +178,7 @@ export const addMessageToDb = async (req, res,) => {
     res.status(201).json({message: "Message added successfully to database."})
 }
 
-export const logout = (req, res) => {
-    res.clearCookie('token')
-    res.status(200).json({message: 'Logged out successfully.'})
-}
+// export const logout = (req, res) => {
+//     res.clearCookie('token')
+//     res.status(200).json({message: 'Logged out successfully.'})
+// }
