@@ -37,8 +37,8 @@ const HomeContact = () => {
           <h1 className="text-3xl font-extrabold">Comprehensive Services for Elderly Care</h1>
           <p>We offer a range of specialized services tailored to meet the unique needs of the elderly. Our compassionate team is dedicated to providing the highest quality of care and support.</p>
           <div className='flex gap-5 items-start'>
-            <Button colorScheme='red' className='rounded-lg p-2 text-center'>Learn More</Button>
-            <Button as={'a'} colorScheme='red' href="/contact" className='rounded-lg p-2 w-[100px] text-center'>Contact</Button>
+            {/* <Button colorScheme='red' className='rounded-lg p-2 text-center'>Learn More</Button> */}
+            <Button as={'a'} colorScheme='red' href="#contact" className='rounded-lg p-2 w-[100px] text-center'>Contact</Button>
           </div>
         </div>
         <div className='w-3/5 grid grid-cols-2 gap-5'>
@@ -56,7 +56,7 @@ const HomeContact = () => {
         <div className='h-full flex items-center justify-center flex-col gap-7 p-4'>
           <h1 className='text-4xl font-extrabold'>Your Care Journey Starts Here</h1>
           <p className='text-left'>Contact us today to learn more about our compassionate foster care services for the elderly.</p>
-          <Button colorScheme={'red'} onClick={()=>router.push('/contact')} w={150} p={3}>Inquire</Button>
+          <Button colorScheme={'red'} onClick={()=>router.push('#contact')} w={150} p={3}>Inquire</Button>
         </div>
       </section>    
     </>

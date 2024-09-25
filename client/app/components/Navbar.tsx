@@ -29,7 +29,7 @@ const Navbar = () => {
             ))}
         </div>
         <div>
-            <h1 className='text-xl font-bold ml-6 max-md:hidden'>+1 860-994-8220</h1>
+            <h1 className='text-xl font-bold ml-6 max-md:hidden'>+1-860-994-8220</h1>
         </div>
         <div className='md:hidden'>
             <Menu>
