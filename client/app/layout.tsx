@@ -9,7 +9,7 @@ const nunito = Nunito({
 }) 
 
 export const metadata: Metadata = {
-  title: "Some app whose name we don't know yet",
+  title: "Legacy AFC",
   description: "A haven for your loved ones.",
 };
 
