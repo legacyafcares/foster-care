@@ -54,7 +54,7 @@ const Footer = () => {
                 <Link  href={l.url} key={index} className='hover:text-slate-500 transition ease-in-out duration-500'>{l.name}</Link>
             ))} */}
             <h2>120 Maple Street, Suite 401</h2>
-            <h3>Springfield, Massachussets</h3>
+            <h3>Springfield, Massachusetts</h3>
         </div>
         <div className='grid gap-1 h-[100px] pt-4'>
             <h1 className="font-extrabold md:mb-5 mb-3">Quick Links</h1>
