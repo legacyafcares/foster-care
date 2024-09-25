@@ -7,7 +7,7 @@ const SectionThree = () => {
             main: 'Dedicated Professionals Committed to Enhancing Quality of Life',
             p: 'Our personalized care plans ensure that each resident receives the attention they deserve.',
             linkText: 'Learn More',
-            link: '/about-us'
+            link: '#services'
         },
         {
             main: 'A Safe and Nurturing Environment for Your Loved Ones',
@@ -19,7 +19,7 @@ const SectionThree = () => {
             main: 'Comprehensive Support for Families and Their Elderly Loved Ones',
             p: 'Our team is here to support both residents and their families every step of the way at all times.',
             linkText: 'Contact',
-            link: '/contact'
+            link: '#contact'
         },
     ]
   return (
