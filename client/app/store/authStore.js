@@ -1,11 +1,9 @@
 import {create} from 'zustand'
 import axios from 'axios'
 import dotenv  from 'dotenv'
-import { useRouter } from 'next/navigation'
 
 dotenv.config()
 
-const router = useRouter()
 const API_URL = process.env.NODE_ENV === 'development' ? 'http://localhost:5000/auth' : 'https://foster-care.onrender.com/auth'
 
 axios.defaults.withCredentials = true;
@@ -92,7 +90,6 @@ export const useAuthStore = create((set) => ({
                 isAuthenticated: true,
                 isLoading: false
             })
-            router.push('/')
             return response.data
         } catch (error) {
             set({
