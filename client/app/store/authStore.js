@@ -22,7 +22,7 @@ export const useAuthStore = create((set) => ({
             error: null
         })
         try {
-            const response = await axios.post(`${API_URL}/auth/signup`, {name, email, password})
+            const response = await axios.post(`${API_URL}/signup`, {name, email, password})
             set({
                 user: response.data.user,
                 isAuthenticated: true,
@@ -84,7 +84,7 @@ export const useAuthStore = create((set) => ({
             error: null
         }) 
         try {
-            const response = await axios.post(`${API_URL}/auth/verify-email`, {code})
+            const response = await axios.post(`${API_URL}/verify-email`, {code})
             set({
                 user: response.data.user,
                 isAuthenticated: true,
