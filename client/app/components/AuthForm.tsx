@@ -48,7 +48,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
     try {
       if (type === 'Sign Up') {
         await handleSignUp()
-        router.push('/')
+        // router.push('/')
       }
     } catch (error) {
       console.error('Error:', error)
