@@ -64,7 +64,7 @@ const VerifyEmailPage = () => {
     if (code.every((digit) => digit !== '')) {
       handleSubmit();  // No need to create a synthetic event
     }
-  }, [code, handleSubmit]);
+  }, [code]);
 
   return (
     <section className='w-screen min-h-screen lg:flex lg:items-center lg:justify-center'>
