@@ -38,7 +38,7 @@ const HomeContact = () => {
           <p>We offer a range of specialized services tailored to meet the unique needs of the elderly. Our compassionate team is dedicated to providing the highest quality of care and support.</p>
           <div className='mx-auto'>
             {/* <Button colorScheme='red' className='rounded-lg p-2 text-center'>Learn More</Button> */}
-            <Button as={'a'} colorScheme='red' href="#contact" className='rounded-lg p-2 w-[100px]'>Contact</Button>
+            <Button as={'a'} colorScheme='green' href="#contact" className='rounded-lg p-2 w-[100px]'>Contact</Button>
           </div>
         </div>
         <div className='lg:w-3/5 flex-col lg:grid lg:grid-cols-2 gap-5 hidden'>
@@ -56,7 +56,7 @@ const HomeContact = () => {
         <div className='h-full flex items-center justify-center flex-col gap-7 p-4'>
           <h1 className='lg:text-4xl text-3xl font-extrabold'>Your Care Journey Starts Here</h1>
           <p className='text-left'>Contact us today to learn more about our compassionate foster care services for the elderly.</p>
-          <Button colorScheme={'red'} onClick={()=>router.push('#contact')} w={150} p={3}>Inquire</Button>
+          <Button colorScheme={'green'} onClick={()=>router.push('#contact')} w={150} p={3}>Inquire</Button>
         </div>
       </section>    
     </>

@@ -31,7 +31,7 @@ const Subscribe = () => {
             value={email}
             onChange={handleChange} 
         />
-        <Button type="submit" p={3} colorScheme='red' w={150} className='max-md:mx-auto'>Subscribe</Button>
+        <Button type="submit" p={3} colorScheme='green' w={150} className='max-md:mx-auto'>Subscribe</Button>
     </form>
   )
 }

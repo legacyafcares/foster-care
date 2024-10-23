@@ -25,7 +25,7 @@ const Navbar = () => {
         </Link>
         <div className="max-sm:hidden">
             {navlinks.map((l, index) => (
-                <Link href={l.url} key={index} className='ml-10 text-lg hover:text-red-400 transition ease-in-out duration-700 hover:scale-95'>{l.name}</Link>
+                <Link href={l.url} key={index} className='ml-10 text-lg hover:text-green-400 transition ease-in-out duration-700 hover:scale-95'>{l.name}</Link>
             ))}
         </div>
         <div>
@@ -39,7 +39,7 @@ const Navbar = () => {
                 <MenuList color={'black'}>
                     {navlinks.map((l, index) => (
                         <Link href={l.url} key={index}>
-                            <MenuItem className='text-black hover:text-red-500 transition ease-in-out duration-700 hover:scale-105'>{l.name}</MenuItem>
+                            <MenuItem className='text-black hover:text-green-500 transition ease-in-out duration-700 hover:scale-105'>{l.name}</MenuItem>
                         </Link>
                     ))}
                 </MenuList>

@@ -68,17 +68,17 @@ const VerifyEmailPage = () => {
 
   return (
     <section className='w-screen min-h-screen lg:flex lg:items-center lg:justify-center'>
-      <div className='max-w-md w-full bg-slate-300 bg-opacity-50 backdrop-filter backdrop-blur-xl rounded-2xl shadow-xl overflow-hidden mx-auto my-24'>
+      <div className='max-w-md w-[80%] lg:w-full bg-slate-300 bg-opacity-50 backdrop-filter backdrop-blur-xl rounded-2xl shadow-xl overflow-hidden mx-auto my-24'>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className='bg-red-200 bg-opacity-50 backdrop-filter backdrop-blur-xl rounded-2xl shadow-2xl p-8 w-full max-w-md'
+          className='bg-green-200 bg-opacity-50 backdrop-filter backdrop-blur-xl rounded-2xl shadow-2xl p-8 w-full max-w-md'
         >
-          <h2 className='text-3xl font-bold mb-6 text-center bg-gradient-to-r from-red-900 to-red-700 text-transparent bg-clip-text'>
+          <h2 className='text-3xl font-bold mb-6 text-center bg-gradient-to-r from-green-900 to-green-700 text-transparent bg-clip-text'>
             Verify Your Email
           </h2>
-          <p className='text-center text-red-800 mb-6'>
+          <p className='text-center text-green-800 mb-6'>
             Enter the 6-digit code sent to your email address.
           </p>
           <form onSubmit={handleSubmit} className='space-y-6'>
@@ -93,7 +93,7 @@ const VerifyEmailPage = () => {
                     value={digit}
                     onChange={(e) => handleChange(index, e.target.value)}
                     onKeyDown={(e) => handleKeyDown(index, e)}
-                    className='w-12 h-12 text-center text-2xl font-bold bg-red-700 text-white border-2 border-red-600 rounded-lg focus:border-orange-500 focus:outline-none' />
+                    className=' size-7 md:size-12 text-center text-2xl font-bold bg-green-700 text-white border-2 border-green-600 rounded-lg focus:border-green-500 focus:outline-none' />
                 );
               })}
             </div>
@@ -103,7 +103,7 @@ const VerifyEmailPage = () => {
               whileTap={{ scale: 0.95 }}
               type='submit'
               disabled={isLoading || code.some((digit) => !digit)}
-              className='w-full bg-gradient-to-r from-red-500 to-red-600 text-white font-bold py-3 px-4 rounded-lg shadow-lg hover:from-orange-600 hover:to-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 disabled:opacity-50'
+              className='w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-bold py-3 px-4 rounded-lg shadow-lg hover:from-green-600 hover:to-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 disabled:opacity-50'
             >
               {isLoading ? 'Verifying...' : 'Verify Email'}
             </motion.button>

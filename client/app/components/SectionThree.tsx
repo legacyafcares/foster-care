@@ -36,7 +36,7 @@ const SectionThree = () => {
                     <CardBody>
                         <p>{c.p}</p>
                         <Link href={c.link}>
-                            <Button colorScheme='red' className='mx-auto mt-5'>{c.linkText}</Button>
+                            <Button colorScheme='green' className='mx-auto mt-5'>{c.linkText}</Button>
                         </Link>
                     </CardBody>
                 </Card>

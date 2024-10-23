@@ -46,7 +46,7 @@ const ContactForm = () => {
                 onChange={handleMessageChange}   // same handler for the textarea
                 className='w-full h-32 p-2 border border-gray-300 rounded-md my-5'
             />
-        <Button type="submit" colorScheme='red' className='mx-auto'>Send Message</Button>
+        <Button type="submit" colorScheme='green' className='mx-auto'>Send Message</Button>
         </div>
       </form>
       <div className='h-full w-1/2 grid place-content-center max-md:hidden'>

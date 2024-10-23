@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.className} bg-red-100`}>
+      <body className={`${nunito.className} bg-green-100`}>
         <Providers>
           {children}
           <Footer/>

@@ -2,7 +2,7 @@
 import { Button, Heading, VStack } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import InputField from './InputField'
-import Link from 'next/link';
+// import Link from 'next/link';
 import { useRouter } from 'next/navigation'; // Use next/navigation for Next.js 13+
 import { useAuthStore } from '@/app/store/authStore.js'
 
@@ -99,11 +99,11 @@ const AuthForm = ({ type }: AuthFormProps) => {
         {isLoading ? 'Loading...' : type === 'Sign In' ? 'Sign In' : 'Sign Up'}
       </Button>
 
-      <Link href={type === 'Sign In' ? '/auth/signup' : '/auth/login'}>
+      {/* <Link href={type === 'Sign In' ? '/auth/signup' : '/auth/login'}>
         {type === 'Sign In' ? 
-        <p>Don&apos;t have an account yet? <span className='text-orange-600 font-bold'>Sign up</span></p> :
-        <p>Have an account already? <span className='text-orange-600 font-bold'>Log In</span></p>}
-      </Link>
+        <p>Don&apos;t have an account yet? <span className='text-green-600 font-bold'>Sign up</span></p> :
+        <p>Have an account already? <span className='text-green-600 font-bold'>Log In</span></p>}
+      </Link> */}
     </VStack>
   )
 }
