@@ -20,10 +20,10 @@ const Navbar = () => {
         },
     ]
   return (
-        <div className='flex justify-between items-center lg:px-16 px-8 py-2 absolute z-10 text-white w-full'>
+        <div className='flex justify-between items-center h-fit lg:px-16 px-8 absolute z-10 text-white w-full'>
         <Link href={'/'}>
-            <div className='flex gap-2 justify-center items-center'>
-                <Image src='/logo.png' alt='Legacy AFC' width={100} height={40}/>
+            <div className='w-[200px]'>
+                <Image src='/logo.png' alt='Legacy AFC' width={500} height={500} />
                 {/* <h1 className='lg:text-2xl max-lg:hidden font-bold'>Legacy AFC</h1> */}
             </div>
         </Link>
