@@ -24,7 +24,7 @@ const Navbar = () => {
         <Link href={'/'}>
             <div className='flex gap-2 justify-center items-center'>
                 <Image src='/logo.png' alt='Legacy AFC' width={100} height={40}/>
-                <h1 className='lg:text-2xl text-xl font-bold'>Legacy AFC</h1>
+                {/* <h1 className='lg:text-2xl max-lg:hidden font-bold'>Legacy AFC</h1> */}
             </div>
         </Link>
         <div className="max-sm:hidden">

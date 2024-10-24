@@ -49,8 +49,8 @@ const Footer = () => {
     <footer className='md:h-[200px] h-screen px-7 bg-green-800 flex max-md:flex-col justify-evenly md:items-center text-white pb-7'>
         <Link href={'/'}>
             <div className="flex items-center gap-2 justify-center">
-                <Image src='/logo.png' alt='Legacy AFC' width={100} height={40}/>
-                <h1 className='font-extrabold text-2xl'>Legacy AFC</h1>
+                <Image src='/logo.png' alt='Legacy AFC' width={200} height={80}/>
+                {/* <h1 className='font-extrabold text-2xl'>Legacy AFC</h1> */}
             </div>
         </Link>
         <div className='grid gap-1 h-[100px] pt-4'>
