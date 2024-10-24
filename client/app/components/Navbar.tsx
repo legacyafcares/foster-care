@@ -2,6 +2,7 @@ import { Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react'
 import { LuMenuSquare } from "react-icons/lu";
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image';
 
 const Navbar = () => {
     const navlinks = [
@@ -21,7 +22,10 @@ const Navbar = () => {
   return (
         <div className='flex justify-between items-center lg:px-16 px-8 py-2 absolute z-10 text-white w-full'>
         <Link href={'/'}>
-            <h1 className='lg:text-4xl text-2xl font-bold'>Legacy AFC</h1>
+            <div className='flex gap-2 justify-center items-center'>
+                <Image src='/logo.png' alt='Legacy AFC' width={100} height={40}/>
+                <h1 className='lg:text-2xl text-xl font-bold'>Legacy AFC</h1>
+            </div>
         </Link>
         <div className="max-sm:hidden">
             {navlinks.map((l, index) => (
