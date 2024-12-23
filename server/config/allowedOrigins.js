@@ -1,6 +1,7 @@
 export const allowedOrigins = [
     'http://localhost:3000',
-    'https://foster-care-woad.vercel.app'
+    'https://www.legacyafcares.com',
+    'https://legacyafcares.com'
 ]
 
 // module.exports = allowedOrigins

@@ -10,6 +10,6 @@ export const mailtrapClient = new MailtrapClient({
 });
 
 export const mailtrapSender = {
-  email: "mailtrap@demomailtrap.com",
-  name: "Philip Wekullo",
+  email: "www.legacyafcares.com",
+  name: "The Legacy AFC Team",
 };
