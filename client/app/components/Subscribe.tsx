@@ -23,7 +23,7 @@ const Subscribe = () => {
   return (
     <form onSubmit={handleSubmit} className='flex max-md:flex-col justify-center md:items-center w-4/5 mx-auto gap-8 mb-12'>
         <div className='mr-auto'>
-            <p className='font-bold'>Subscribe to updates about our services and community events.</p>
+            <p className='font-bold font-afacad text-lg'>Subscribe to updates about our services and community events.</p>
         </div>
         <InputField 
             type={'email'} 

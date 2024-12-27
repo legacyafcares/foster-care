@@ -23,7 +23,7 @@ const ContactForm = () => {
       }
     }
   return (
-    <section className='w-full h-screen flex gap-3 justify-center items-center' id='contact'>
+    <section className='flex-1 my-16 flex gap-3 justify-center items-center' id='contact'>
       <form onSubmit={handleSubmit} className='lg:w-2/5 left-0 lg:ml-16 px-3'>
         <h1 className="lg:text-3xl text-2xl font-bold">Get In Touch With Us</h1>
         <div className='flex flex-col gap-3 items-start'>

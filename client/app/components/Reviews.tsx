@@ -17,14 +17,14 @@ const Reviews = () => {
         }
     ];
   return (
-    <section className='w-full min-h-screen bg-cover flex items-center flex-col'>
-        <h3 className='font-gothic text-center text-4xl font-extrabold lg:mt-32 mt-8'>
+    <section className='flex-1 bg-cover flex items-center flex-col'>
+        <h3 className='text-center text-4xl font-extrabold lg:mt-32 mt-8'>
             What Our Customers Are Saying
         </h3>
-        <p className='m-auto lg:mt-16 mt-8 text-center font-semibold'>
+        <p className='m-auto lg:mt-16 mt-8 text-center font-semibold text-xl'>
             Hear genuine stories from our satisfied customers about their exceptional experiences with us.
         </p>
-        <div className='lg:mt-24 mt-12 flex max-md:flex-col flex-1 justify-evenly items-center lg:gap-14 gap-6'>
+        <div className='font-afacad text-xl lg:mt-24 mt-12 flex max-md:flex-col flex-1 justify-evenly items-center lg:gap-14 gap-6'>
             {reviews.map(review => (
                 <ReviewCard key={review.customerName} imgURL={review.imgURL} customerName={review.customerName} rating={review.rating} feedback={review.feedback}/>
             ))}
