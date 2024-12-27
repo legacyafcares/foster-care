@@ -109,7 +109,13 @@ const page = () => {
           Our Vision
         </h2>
         <div className="size-full grid lg:grid-cols-2 grid-cols-1 gap-6 justify-items-center items-center font-afacad text-lg">
-          <Image src={"/about-2.png"} alt="about us" width={400} height={400} />
+          <Image
+            src={"/about-2.png"}
+            alt="about us"
+            width={400}
+            height={400}
+            className="max-md:hidden"
+          />
           <p>
             Legacy AFC envisions a future where every individual has access to
             quality, compassionate care, enabling them to live life to the
