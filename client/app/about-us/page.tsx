@@ -69,7 +69,7 @@ const page = () => {
             invest in our team&apos;s professional development through
             continuous training and mentorship. Our flexible working hours
             ensure our staff can manage personal commitments effectively. At
-            Horizon, we offer more than one job; we provide a fulfilling career
+            Legacy AFC, we offer more than one job; we provide a fulfilling career
             in a nurturing environment where every day&apos;s work makes a real
             difference.
           </p>
@@ -152,7 +152,7 @@ const page = () => {
       </section>
       {/* commitment to quality */}
       <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
-        <h2 className="lg:text-5xl text-xl mb-5 text-green-700 text-right mr-[100px]">
+        <h2 className="lg:text-5xl text-xl mb-5 text-green-700 lg:text-right lg:mr-[100px]">
           Our Commitment to Quality
         </h2>
         <div className="size-full grid lg:grid-cols-2 grid-cols-1 justify-items-center items-center gap-6 text-lg">
