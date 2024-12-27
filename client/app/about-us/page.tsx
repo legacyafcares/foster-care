@@ -65,11 +65,11 @@ const page = () => {
             service. We believe in supporting those who provide care, fostering
             an environment that promotes growth and balances work and personal
             life. We reward hard work with competitive pay and benefits and
-            invest in our team's professional development through continuous
+            invest in our team&apos;s professional development through continuous
             training and mentorship. Our flexible working hours ensure our staff
             can manage personal commitments effectively. At Horizon, we offer
             more than one job; we provide a fulfilling career in a nurturing
-            environment where every day's work makes a real difference.
+            environment where every day&apos;s work makes a real difference.
           </p>
         </div>
       </section>

@@ -161,7 +161,7 @@ const ServicesPage = () => {
             Based on the assessment, a personalized care plan is developed for
             each member, outlining their specific needs, preferences, goals, and
             the services to be provided by our clinical staff. The care plan is
-            regularly reviewed and updated as needed to ensure that the members'
+            regularly reviewed and updated as needed to ensure that the members&apos;
             needs are being met effectively.
           </p>
         </div>
