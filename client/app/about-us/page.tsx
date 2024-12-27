@@ -99,7 +99,7 @@ const page = () => {
             width={400}
             height={400}
             alt="About Us"
-            className="w-auto h-auto"
+            className="w-auto h-auto max-md:hidden"
           />
         </div>
       </section>
@@ -135,7 +135,13 @@ const page = () => {
               </li>
             ))}
           </ol>
-          <Image src={"/about-3.png"} alt="about us" width={400} height={400} />
+          <Image
+            src={"/about-3.png"}
+            alt="about us"
+            width={400}
+            height={400}
+            className="max-md:hidden"
+          />
         </div>
       </section>
       {/* commitment to quality */}
@@ -144,7 +150,13 @@ const page = () => {
           Our Commitment to Quality
         </h2>
         <div className="size-full grid lg:grid-cols-2 grid-cols-1 justify-items-center items-center gap-6 text-lg">
-          <Image src={"/about-4.png"} alt="about us" width={400} height={400} />
+          <Image
+            src={"/about-4.png"}
+            alt="about us"
+            width={400}
+            height={400}
+            className="max-md:hidden"
+          />
           <p className="font-afacad">
             Quality is not just a goal at Legacy AFC, it&apos;s our standard. We
             adhere to rigorous standards of care, employing the latest
@@ -171,7 +183,13 @@ const page = () => {
               ))}
             </ul>
           </div>
-          <Image src={"/about-5.png"} alt="about us" width={500} height={500} />
+          <Image
+            src={"/about-5.png"}
+            alt="about us"
+            width={500}
+            height={500}
+            className="max-lg:hidden"
+          />
         </div>
       </section>
     </>
