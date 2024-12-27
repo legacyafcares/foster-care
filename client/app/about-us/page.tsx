@@ -1,5 +1,6 @@
 import React from "react";
 import SecondNav from "../components/SecondNav";
+import Image from "next/image";
 
 const page = () => {
   const coreValues = [
@@ -37,10 +38,10 @@ const page = () => {
       <SecondNav />
       {/* history */}
       <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
-        <h1 className="lg:text-5xl text-2xl mb-6 text-center font-extrabold my-4 text-green-700">
+        <h1 className="lg:text-6xl text-2xl mb-6 text-center font-extrabold my-4 text-green-700">
           About Us
         </h1>
-        <h2 className="lg:text-3xl text-xl mb-5 text-green-700">Our History</h2>
+        <h2 className="lg:text-5xl text-xl mb-5 text-green-700">Our History</h2>
         <div className="size-full grid lg:grid-cols-3 gap-6 font-afacad lg:text-lg text-md">
           <p>
             Founded in 2024, Legacy AFC was born out of a genuine desire to make
@@ -65,18 +66,19 @@ const page = () => {
             service. We believe in supporting those who provide care, fostering
             an environment that promotes growth and balances work and personal
             life. We reward hard work with competitive pay and benefits and
-            invest in our team&apos;s professional development through continuous
-            training and mentorship. Our flexible working hours ensure our staff
-            can manage personal commitments effectively. At Horizon, we offer
-            more than one job; we provide a fulfilling career in a nurturing
-            environment where every day&apos;s work makes a real difference.
+            invest in our team&apos;s professional development through
+            continuous training and mentorship. Our flexible working hours
+            ensure our staff can manage personal commitments effectively. At
+            Horizon, we offer more than one job; we provide a fulfilling career
+            in a nurturing environment where every day&apos;s work makes a real
+            difference.
           </p>
         </div>
       </section>
       {/* mission */}
       <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
-        <h2 className="lg:text-3xl text-xl mb-5 text-green-700">Our Mission</h2>
-        <div className="size-full grid lg:grid-cols-2 grid-cols-1 gap-6 font-afacad text-lg">
+        <h2 className="lg:text-5xl text-xl mb-5 text-green-700">Our Mission</h2>
+        <div className="size-full grid lg:grid-cols-2 grid-cols-1 justify-items-center items-center gap-6 font-afacad text-lg">
           <p>
             Our mission is to enrich the lives of individuals and families
             through compassionate, holistic care and support, promoting healthy
@@ -92,12 +94,22 @@ const page = () => {
             fosters growth, independence, and a sense of belonging, where
             residents can age with dignity and respect.
           </p>
+          <Image
+            src={"/about-1.png"}
+            width={400}
+            height={400}
+            alt="About Us"
+            className="w-auto h-auto"
+          />
         </div>
       </section>
       {/* vision */}
       <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
-        <h2 className="lg:text-3xl text-xl mb-5 text-green-700">Our Vision</h2>
-        <div className="size-full grid lg:grid-cols-2 grid-cols-1 gap-6 font-afacad text-lg">
+        <h2 className="lg:text-5xl text-xl mb-5 text-green-700 text-right mr-[420px]">
+          Our Vision
+        </h2>
+        <div className="size-full grid lg:grid-cols-2 grid-cols-1 gap-6 justify-items-center items-center font-afacad text-lg">
+          <Image src={"/about-2.png"} alt="about us" width={400} height={400} />
           <p>
             Legacy AFC envisions a future where every individual has access to
             quality, compassionate care, enabling them to live life to the
@@ -107,24 +119,32 @@ const page = () => {
       </section>
       {/* core values */}
       <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
-        <h2 className="lg:text-3xl text-xl mb-5 text-green-700">Our Core Values</h2>
-        <div className="size-full grid lg:grid-cols-2 max-lg: justify-items-center max-lg:align-items-center grid-cols-1 gap-6 text-lg">
+        <h2 className="lg:text-5xl text-xl mb-5 text-green-700">
+          Our Core Values
+        </h2>
+        <div className="size-full grid lg:grid-cols-2 max-lg: justify-items-center max-lg:items-center grid-cols-1 gap-6 text-lg">
           <ol>
             {coreValues.map((value, index) => (
               <li key={index} className="mb-4 list-disc max-md:ml-4">
-                <h3 className="lg:text-2xl text-lg mb-2 lg:font-semibold font-extrabold">{value.name}</h3>
-                <p className="font-afacad max-lg:text-md">{value.description}</p>
+                <h3 className="lg:text-2xl text-lg mb-2 lg:font-semibold font-extrabold">
+                  {value.name}
+                </h3>
+                <p className="font-afacad max-lg:text-md">
+                  {value.description}
+                </p>
               </li>
             ))}
           </ol>
+          <Image src={"/about-3.png"} alt="about us" width={400} height={400} />
         </div>
       </section>
       {/* commitment to quality */}
       <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
-        <h2 className="lg:text-3xl text-xl mb-5 text-green-700">
+        <h2 className="lg:text-5xl text-xl mb-5 text-green-700 text-right mr-[100px]">
           Our Commitment to Quality
         </h2>
-        <div className="size-full grid lg:grid-cols-2 grid-cols-1 gap-6 text-lg">
+        <div className="size-full grid lg:grid-cols-2 grid-cols-1 justify-items-center items-center gap-6 text-lg">
+          <Image src={"/about-4.png"} alt="about us" width={400} height={400} />
           <p className="font-afacad">
             Quality is not just a goal at Legacy AFC, it&apos;s our standard. We
             adhere to rigorous standards of care, employing the latest
@@ -137,8 +157,10 @@ const page = () => {
       </section>
       {/* company goals */}
       <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
-        <h2 className="lg:text-3xl text-xl mb-5 text-green-700">Company Goals</h2>
-        <div className="size-full grid lg:grid-cols-2 grid-cols-1 gap-6 text-lg">
+        <h2 className="lg:text-5xl text-xl mb-5 text-green-700">
+          Company Goals
+        </h2>
+        <div className="size-full grid lg:grid-cols-2 grid-cols-1 justify-items-center items-center gap-6 text-lg">
           <div>
             <p className="mb-6">The company aims to:</p>
             <ul className="font-afacad">
@@ -149,6 +171,7 @@ const page = () => {
               ))}
             </ul>
           </div>
+          <Image src={"/about-5.png"} alt="about us" width={500} height={500} />
         </div>
       </section>
     </>
