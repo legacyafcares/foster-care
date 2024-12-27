@@ -20,7 +20,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center py-2 md:py-4 lg:px-16 px-4 absolute z-10 text-white w-full">
+    <div className="flex justify-between items-center py-2 md:py-4 lg:px-16 px-4 absolute z-10 text-green-700 w-full">
       <Link href={"/"}>
         <div className="lg:w-[200px] lg:h-[75px] w-[100px] h-[25px] flex items-center justify-center">
           <Image src="/logo.png" alt="Legacy AFC" width={120} height={75} className="w-auto h-auto"/>
