@@ -16,12 +16,12 @@ const ServicesPage = () => {
     {
       name: "Medication Management",
       description:
-        "Monitoring administering medications as prescribed by healthcare professionals and monitoring members' medication adherence and potential side effects.",
+        "Monitoring administering medications as prescribed by healthcare professionals and monitoring members&apos; medication adherence and potential side effects.",
     },
     {
       name: "Meal Preparation and Nutrition Support",
       description:
-        "Ensuring members' care givers plan and prepare nutritious meals based on members' dietary needs and preferences, ensuring they receive adequate nutrition for their health and well-being.",
+        "Ensuring members&apos; care givers plan and prepare nutritious meals based on members&apos; dietary needs and preferences, ensuring they receive adequate nutrition for their health and well-being.",
     },
     {
       name: "Social and Recreational Activities",
@@ -31,12 +31,12 @@ const ServicesPage = () => {
     {
       name: "Care Coordination",
       description:
-        "Collaborating with healthcare professionals, including physicians, nurses, therapists, and social workers, to coordinate and manage members' medical and personal care needs.",
+        "Collaborating with healthcare professionals, including physicians, nurses, therapists, and social workers, to coordinate and manage members&apos; medical and personal care needs.",
     },
     {
       name: "Supportive Services",
       description:
-        "Offering emotional support, counseling, and assistance with navigating community resources to address members' psychosocial needs and enhance their quality of life. Our staff includes several multilingual individuals to seamlessly attend to the needs of members and their families.",
+        "Offering emotional support, counseling, and assistance with navigating community resources to address members&apos; psychosocial needs and enhance their quality of life. Our staff includes several multilingual individuals to seamlessly attend to the needs of members and their families.",
     },
     {
       name: "24-Hour availability and Emergency Response",
@@ -59,17 +59,17 @@ const ServicesPage = () => {
     {
       name: "Step 3",
       description:
-        "Third step is to work with prospective member’s primary care provider to offer authorization. All paperwork is solely done by our team.",
+        "Third step is to work with prospective member&apos;s primary care provider to offer authorization. All paperwork is solely done by our team.",
     },
     {
       name: "Step 4",
       description:
-        "We then work with prospective member’s insurance provider to ensure payment will be authorized.",
+        "We then work with prospective member&apos;s insurance provider to ensure payment will be authorized.",
     },
     {
       name: "Step 5",
       description:
-        "Last step in the process is the start of services. If everything checks out, services start within days. The entire team will introduce themselves to the family and a clinical manager will draw up a detailed care plan tailored for each member. This care plan is continuously updated depending on member’s evolving needs.",
+        "Last step in the process is the start of services. If everything checks out, services start within days. The entire team will introduce themselves to the family and a clinical manager will draw up a detailed care plan tailored for each member. This care plan is continuously updated depending on member&apos;s evolving needs.",
     },
   ];
 
@@ -97,12 +97,12 @@ const ServicesPage = () => {
     {
       name: "Coordinated Healthcare",
       description:
-        "Our services include arranging and facilitating appointments with various healthcare providers. This ensures that our members don't miss crucial health appointments.",
+        "Our services include arranging and facilitating appointments with various healthcare providers. This ensures that our members don&apos;t miss crucial health appointments.",
     },
     {
       name: "Single Point of Contact",
       description:
-        "As the care providers in daily contact, we act as a reliable point of contact for all other healthcare providers involved in our members' care. We ensure a smooth flow of essential information between providers, guaranteeing a cohesive approach to care.",
+        "As the care providers in daily contact, we act as a reliable point of contact for all other healthcare providers involved in our members&apos; care. We ensure a smooth flow of essential information between providers, guaranteeing a cohesive approach to care.",
     },
     {
       name: "Reduced E.R. Visits and Hospitalizations",
