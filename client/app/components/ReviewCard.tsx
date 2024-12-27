@@ -11,7 +11,7 @@ const ReviewCard = ({customerName, rating, feedback, imgURL} : ReviewProps) => {
 
   return (
     <div className='flex justify-center items-center flex-col'>
-      <Image src={imgURL} alt="customer" className='rounded-full object-cover w-[120px] h-[120px]' />
+      <Image src={imgURL} alt="customer" width={120} height={120} className='rounded-full object-cover' />
       <p className='mt-6 max-w-sm text-center'>{feedback}</p>
       <div className='mt-3 flex items-center justify-center gap-2.5'>
         <p className='text-xl font-gothic text-slate-gray'>({rating})</p>

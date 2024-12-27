@@ -12,7 +12,8 @@ const config: Config = {
         background: "#ff8f00",
       },
       fontFamily: {
-        nunito: ['Nunito, sans-serif']
+        nunito: ['Nunito, sans-serif'],
+        afacad: ['Afacad Flux, sans-serif']
       }
     },
   },
