@@ -1,5 +1,4 @@
 import React from "react";
-import { FaFeatherPointed } from "react-icons/fa6";
 import SecondNav from "../components/SecondNav";
 
 const page = () => {
