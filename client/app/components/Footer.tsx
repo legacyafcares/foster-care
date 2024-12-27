@@ -44,7 +44,7 @@ const Footer = () => {
           <h1 className='font-extralight text-sm'>&copy;LEGACY AFC 2024. ALL RIGHTS RESERVED</h1>
         </div>
       </Link>
-      <div className="grid gap-3 h-[100px] pt-4 w-[300px] justify-items-start">
+      <div className="grid gap-3 h-[100px] pt-4 w-[300px] justify-items-start mb-12">
         <div className="flex items-center gap-2">
           <FiPhone />
           <h1>+1-860-994-8220</h1>

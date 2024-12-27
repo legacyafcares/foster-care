@@ -26,22 +26,22 @@ const page = () => {
   ];
 
   const companyGoals = [
-    "1. Provide high quality, responsive member centered care by helping members become healthy, independent and safe at home.",
-    "2. Coordinate member care with other multidisciplinary care team through timely and focused consultations and interactions.",
-    "3. Establish all our processes to achieve “the well-oiled machine”.",
-    "4. Develop a culture of compliance by implementing policies and procedures that meet the applicable CARF state and federal standards and regulations.",
-    "5. Make Legacy AFC the best place to work by acquiring and retaining high quality talent, providing fulfilling job opportunities and career advancement through training, mentoring, professional development and promotions.",
+    "Provide high quality, responsive member centered care by helping members become healthy, independent and safe at home.",
+    "Coordinate member care with other multidisciplinary care team through timely and focused consultations and interactions.",
+    "Establish all our processes to achieve “the well-oiled machine”.",
+    "Develop a culture of compliance by implementing policies and procedures that meet the applicable CARF state and federal standards and regulations.",
+    "Make Legacy AFC the best place to work by acquiring and retaining high quality talent, providing fulfilling job opportunities and career advancement through training, mentoring, professional development and promotions.",
   ];
   return (
     <>
       <SecondNav />
       {/* history */}
-      <section className="flex-1 px-14 pt-24 bg-gray-100">
-        <h1 className="text-5xl mb-6 text-center font-extrabold my-4 text-green-700">
+      <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
+        <h1 className="lg:text-5xl text-2xl mb-6 text-center font-extrabold my-4 text-green-700">
           About Us
         </h1>
-        <h2 className="text-3xl mb-5 text-green-700">Our History</h2>
-        <div className="size-full grid grid-cols-3 gap-6 font-afacad text-lg">
+        <h2 className="lg:text-3xl text-xl mb-5 text-green-700">Our History</h2>
+        <div className="size-full grid lg:grid-cols-3 gap-6 font-afacad lg:text-lg text-md">
           <p>
             Founded in 2024, Legacy AFC was born out of a genuine desire to make
             a positive impact in the lives of individuals facing medical or
@@ -74,9 +74,9 @@ const page = () => {
         </div>
       </section>
       {/* mission */}
-      <section className="flex-1 px-14 pt-24 bg-gray-100">
-        <h2 className="text-3xl mb-5 text-green-700">Our Mission</h2>
-        <div className="size-full grid grid-cols-2 gap-6 font-afacad text-lg">
+      <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
+        <h2 className="lg:text-3xl text-xl mb-5 text-green-700">Our Mission</h2>
+        <div className="size-full grid lg:grid-cols-2 grid-cols-1 gap-6 font-afacad text-lg">
           <p>
             Our mission is to enrich the lives of individuals and families
             through compassionate, holistic care and support, promoting healthy
@@ -95,9 +95,9 @@ const page = () => {
         </div>
       </section>
       {/* vision */}
-      <section className="flex-1 px-14 pt-24 bg-gray-100">
-        <h2 className="text-3xl mb-5 text-green-700">Our Vision</h2>
-        <div className="size-full grid grid-cols-2 gap-6 font-afacad text-lg">
+      <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
+        <h2 className="lg:text-3xl text-xl mb-5 text-green-700">Our Vision</h2>
+        <div className="size-full grid lg:grid-cols-2 grid-cols-1 gap-6 font-afacad text-lg">
           <p>
             Legacy AFC envisions a future where every individual has access to
             quality, compassionate care, enabling them to live life to the
@@ -106,25 +106,25 @@ const page = () => {
         </div>
       </section>
       {/* core values */}
-      <section className="flex-1 px-14 pt-24 bg-gray-100">
-        <h2 className="text-3xl mb-5 text-green-700">Our Core Values</h2>
-        <div className="size-full grid grid-cols-2 gap-6 text-lg">
+      <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
+        <h2 className="lg:text-3xl text-xl mb-5 text-green-700">Our Core Values</h2>
+        <div className="size-full grid lg:grid-cols-2 max-lg: justify-items-center max-lg:align-items-center grid-cols-1 gap-6 text-lg">
           <ol>
             {coreValues.map((value, index) => (
-              <li key={index} className="mb-4">
-                <h3 className="text-2xl mb-2 font-semibold">{value.name}</h3>
-                <p className="font-afacad">{value.description}</p>
+              <li key={index} className="mb-4 list-disc max-md:ml-4">
+                <h3 className="lg:text-2xl text-lg mb-2 lg:font-semibold font-extrabold">{value.name}</h3>
+                <p className="font-afacad max-lg:text-md">{value.description}</p>
               </li>
             ))}
           </ol>
         </div>
       </section>
       {/* commitment to quality */}
-      <section className="flex-1 px-14 pt-24 bg-gray-100">
-        <h2 className="text-3xl mb-5 text-green-700">
+      <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
+        <h2 className="lg:text-3xl text-xl mb-5 text-green-700">
           Our Commitment to Quality
         </h2>
-        <div className="size-full grid grid-cols-2 gap-6 text-lg">
+        <div className="size-full grid lg:grid-cols-2 grid-cols-1 gap-6 text-lg">
           <p className="font-afacad">
             Quality is not just a goal at Legacy AFC, it&apos;s our standard. We
             adhere to rigorous standards of care, employing the latest
@@ -136,14 +136,14 @@ const page = () => {
         </div>
       </section>
       {/* company goals */}
-      <section className="flex-1 px-14 pt-24 bg-gray-100">
-        <h2 className="text-3xl mb-5 text-green-700">Company Goals</h2>
-        <div className="size-full grid grid-cols-2 gap-6 text-lg">
+      <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
+        <h2 className="lg:text-3xl text-xl mb-5 text-green-700">Company Goals</h2>
+        <div className="size-full grid lg:grid-cols-2 grid-cols-1 gap-6 text-lg">
           <div>
             <p className="mb-6">The company aims to:</p>
             <ul className="font-afacad">
               {companyGoals.map((goal, index) => (
-                <li key={index} className="mb-4">
+                <li key={index} className="mb-4 list-disc ml-4">
                   {goal}
                 </li>
               ))}

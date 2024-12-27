@@ -16,12 +16,12 @@ const ServicesPage = () => {
     {
       name: "Medication Management",
       description:
-        "Monitoring administering medications as prescribed by healthcare professionals and monitoring members&apos; medication adherence and potential side effects.",
+        "Monitoring administering medications as prescribed by healthcare professionals and monitoring members' medication adherence and potential side effects.",
     },
     {
       name: "Meal Preparation and Nutrition Support",
       description:
-        "Ensuring members&apos; care givers plan and prepare nutritious meals based on members&apos; dietary needs and preferences, ensuring they receive adequate nutrition for their health and well-being.",
+        "Ensuring members&apos; care givers plan and prepare nutritious meals based on members' dietary needs and preferences, ensuring they receive adequate nutrition for their health and well-being.",
     },
     {
       name: "Social and Recreational Activities",
@@ -31,17 +31,17 @@ const ServicesPage = () => {
     {
       name: "Care Coordination",
       description:
-        "Collaborating with healthcare professionals, including physicians, nurses, therapists, and social workers, to coordinate and manage members&apos; medical and personal care needs.",
+        "Collaborating with healthcare professionals, including physicians, nurses, therapists, and social workers, to coordinate and manage members' medical and personal care needs.",
     },
     {
       name: "Supportive Services",
       description:
-        "Offering emotional support, counseling, and assistance with navigating community resources to address members&apos; psychosocial needs and enhance their quality of life. Our staff includes several multilingual individuals to seamlessly attend to the needs of members and their families.",
+        "Offering emotional support, counseling, and assistance with navigating community resources to address members' psychosocial needs and enhance their quality of life. Our staff includes several multilingual individuals to seamlessly attend to the needs of members and their families.",
     },
     {
       name: "24-Hour availability and Emergency Response",
       description:
-        "Providing round-the-clock availability and assistance, as well as offering coordination in emergency response services to always ensure members&apos; safety and security.",
+        "Providing round-the-clock availability and assistance, as well as offering coordination in emergency response services to always ensure members' safety and security.",
     },
   ];
 
@@ -59,17 +59,17 @@ const ServicesPage = () => {
     {
       name: "Step 3",
       description:
-        "Third step is to work with prospective member&apos;s primary care provider to offer authorization. All paperwork is solely done by our team.",
+        "Third step is to work with prospective member's primary care provider to offer authorization. All paperwork is solely done by our team.",
     },
     {
       name: "Step 4",
       description:
-        "We then work with prospective member&apos;s insurance provider to ensure payment will be authorized.",
+        "We then work with prospective member's insurance provider to ensure payment will be authorized.",
     },
     {
       name: "Step 5",
       description:
-        "Last step in the process is the start of services. If everything checks out, services start within days. The entire team will introduce themselves to the family and a clinical manager will draw up a detailed care plan tailored for each member. This care plan is continuously updated depending on member&apos;s evolving needs.",
+        "Last step in the process is the start of services. If everything checks out, services start within days. The entire team will introduce themselves to the family and a clinical manager will draw up a detailed care plan tailored for each member. This care plan is continuously updated depending on member's evolving needs.",
     },
   ];
 
@@ -97,12 +97,12 @@ const ServicesPage = () => {
     {
       name: "Coordinated Healthcare",
       description:
-        "Our services include arranging and facilitating appointments with various healthcare providers. This ensures that our members don&apos;t miss crucial health appointments.",
+        "Our services include arranging and facilitating appointments with various healthcare providers. This ensures that our members don't miss crucial health appointments.",
     },
     {
       name: "Single Point of Contact",
       description:
-        "As the care providers in daily contact, we act as a reliable point of contact for all other healthcare providers involved in our members&apos; care. We ensure a smooth flow of essential information between providers, guaranteeing a cohesive approach to care.",
+        "As the care providers in daily contact, we act as a reliable point of contact for all other healthcare providers involved in our members' care. We ensure a smooth flow of essential information between providers, guaranteeing a cohesive approach to care.",
     },
     {
       name: "Reduced E.R. Visits and Hospitalizations",
@@ -113,11 +113,11 @@ const ServicesPage = () => {
   return (
     <>
       <SecondNav />
-      <section className="flex-1 bg-gray-100 px-14 pt-24">
-        <h1 className="text-5xl font-extrabold text-center text-green-700">
+      <section className="flex-1 bg-gray-100 lg:px-14 px-4 lg:pt-24 pt-12">
+        <h1 className="lg:text-5xl text-xl mt-6 font-extrabold text-center text-green-700">
           Our Services
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-10 gap-5 mt-10">
           {services.map((service, index) => (
             <div key={index} className="bg-white shadow-md p-6 rounded-lg">
               <h1 className="text-xl font-bold text-green-700">
@@ -131,11 +131,11 @@ const ServicesPage = () => {
           <h3 className="mt-10 text-3xl font-semibold text-green-700">
             Additional Services
           </h3>
-          <p className="font-afacad w-3/5 mx-auto text-xl mt-4">
+          <p className="font-afacad lg:w-3/5 mx-auto text-xl mt-4">
             If additional services are needed, the nurse or case manager will
             assist in setting up these services, including but not limited to:
           </p>
-          <ul className="list-disc list-inside mt-4 text-lg">
+          <ul className="list-disc ml-4 mt-4 lg:text-lg text-md">
             <li>Physical therapy</li>
             <li>Occupational therapy</li>
             <li>Speech therapy</li>
@@ -145,19 +145,19 @@ const ServicesPage = () => {
             <li>Home modifications</li>
           </ul>
         </div>
-        <p className="mt-10 text-xl font-afacad w-3/5 text-center mx-auto">
+        <p className="mt-10 text-xl font-afacad lg:w-3/5 text-center mx-auto">
           These services aim to enhance the overall quality of life for adults
           who may require assistance with daily activities due to aging,
           disability, illness, or other challenges, while promoting
           independence, dignity, and autonomy.
         </p>
       </section>
-      <section className="flex-1 bg-gray-100 px-14 pt-24">
+      <section className="flex-1 bg-gray-100 lg:px-14 px-4 lg:pt-24 pt-12">
         <h2 className="text-3xl font-semibold text-center text-green-700">
           Care Plan Development
         </h2>
         <div className="mt-10">
-          <p className="font-afacad text-xl w-3/5 text-center mx-auto">
+          <p className="font-afacad text-xl lg:w-3/5 text-center mx-auto">
             Based on the assessment, a personalized care plan is developed for
             each member, outlining their specific needs, preferences, goals, and
             the services to be provided by our clinical staff. The care plan is
@@ -166,17 +166,17 @@ const ServicesPage = () => {
           </p>
         </div>
       </section>
-      <section className="flex-1 bg-gray-100 px-14 pt-24">
+      <section className="flex-1 bg-gray-100 lg:px-14 px-4 lg:pt-24 pt-12">
         <h2 className="text-3xl font-semibold text-center text-green-700">
           How Prospective Members can Join
         </h2>
         <div className="mt-10">
-          <p className="font-afacad text-xl w-3/5 text-center mx-auto">
+          <p className="font-afacad text-xl lg:w-3/5 text-center mx-auto">
             Members will seek our services mostly by recommendations from
             community members and healthcare providers. We follow a set of laid
             out steps to ensure an easy and effective onboarding.
           </p>
-          <div className="grid grid-cols-1 gap-10 mt-10 w-2/5 mx-auto">
+          <div className="grid grid-cols-1 gap-10 mt-10 lg:w-2/5 mx-auto">
             {steps.map((step, index) => (
               <div key={index} className="bg-white shadow-md p-6 rounded-lg">
                 <h1 className="text-xl font-bold text-green-700">
@@ -188,11 +188,11 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
-      <section className="flex-1 bg-gray-100 px-14 pt-24">
+      <section className="flex-1 bg-gray-100 lg:px-14 px-4 lg:pt-24 pt-12">
         <h2 className="text-3xl font-semibold text-center text-green-700">
           Commitment
         </h2>
-        <p className="font-afacad text-xl w-3/5 text-center mx-auto mt-10">
+        <p className="font-afacad text-xl lg:w-3/5 lg:text-center mx-auto mt-10">
           Legacy AFC works closely with each member to secure necessary
           approvals from their health insurance provider, ensuring services are
           accessible to those who need them most. The goal is to provide
@@ -201,11 +201,11 @@ const ServicesPage = () => {
           without additional costs.
         </p>
       </section>
-      <section className="flex-1 bg-gray-100 px-14 py-24">
+      <section className="flex-1 bg-gray-100 lg:px-14 px-4 lg:py-24 py-12">
         <h1 className="text-3xl font-semibold text-center text-green-700">
           Benefits of Our Program
         </h1>
-        <div className="grid grid-cols-1 w-3/5 mx-auto gap-5 mt-10">
+        <div className="grid grid-cols-1 lg:w-3/5 mx-auto gap-5 mt-10">
           {benefits.map((benefit, index) => (
             <div key={index} className="bg-white shadow-md p-6 rounded-lg">
               <h1 className="text-xl font-bold text-green-700">
