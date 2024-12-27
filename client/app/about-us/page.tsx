@@ -105,7 +105,7 @@ const page = () => {
       </section>
       {/* vision */}
       <section className="flex-1 lg:px-14 px-4 lg:pt-24 pt-12 bg-gray-100">
-        <h2 className="lg:text-5xl text-xl mb-5 text-green-700 text-right mr-[420px]">
+        <h2 className="lg:text-5xl text-xl mb-5 text-green-700 lg:text-right lg:mr-[420px]">
           Our Vision
         </h2>
         <div className="size-full grid lg:grid-cols-2 grid-cols-1 gap-6 justify-items-center items-center font-afacad text-lg">
