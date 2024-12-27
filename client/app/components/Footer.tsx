@@ -15,10 +15,10 @@ const Footer = () => {
       name: "Our Services",
       url: "/our-services",
     },
-    {
-      name: "Contact Us",
-      url: "#contact",
-    },
+    // {
+    //   name: "Contact Us",
+    //   url: "#contact",
+    // },
   ];
  
   const updateLinks = [
