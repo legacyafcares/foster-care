@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { MdOutlineEmail } from "react-icons/md";
@@ -7,6 +7,10 @@ import { FiPhone } from "react-icons/fi";
 
 const Footer = () => {
   const quickLinks = [
+    {
+      name: "Home",
+      url: "/",
+    },
     {
       name: "About Us",
       url: "/about-us",
@@ -20,7 +24,7 @@ const Footer = () => {
     //   url: "#contact",
     // },
   ];
- 
+
   const updateLinks = [
     {
       name: "Newsletter Sign Up",
@@ -38,13 +42,21 @@ const Footer = () => {
 
   return (
     <footer className="md:h-[200px] h-screen w-full px-7 bg-green-800 flex max-md:flex-col justify-evenly md:items-center text-white pb-7">
-      <Link href={"/"}>
-        <div className="flex flex-col items-center gap-10 justify-between">
-          <Image src="/logo.png" alt="Legacy AFC" width={200} height={80} />
-          <h1 className='font-extralight text-sm'>&copy;LEGACY AFC 2024. ALL RIGHTS RESERVED</h1>
+      {/* <Link href={"/"}>
+        <div className="flex flex-col items-center gap-10 justify-between max-lg:hidden">
+          <Image
+            src="/logo.png"
+            alt="Legacy AFC"
+            width={100}
+            height={100}
+            className="mt-12"
+          />
         </div>
-      </Link>
-      <div className="grid gap-3 h-[100px] lg:pt-10 pt-4 w-[300px] justify-items-start mb-12">
+      </Link> */}
+      <h1 className="font-semibold text-lg mt-12">
+        &copy;LEGACY AFC 2024. ALL RIGHTS RESERVED
+      </h1>
+      <div className="grid gap-3 h-[100px] lg:pt-10 pt-4 w-[300px] justify-items-start mb-10">
         <div className="flex items-center gap-2">
           <FiPhone />
           <h1>+1-860-994-8220</h1>
@@ -61,7 +73,7 @@ const Footer = () => {
           <h3 className="ml-6">Auburn MA 01501</h3>
         </div>
       </div>
-      <div className="grid gap-1 h-[100px] pt-4">
+      <div className="grid gap-1 h-[100px] lg:pt-8 pt-4 mb-8">
         <h1 className="font-extrabold md:mb-5 mb-3">QUICK LINKS</h1>
         {quickLinks.map((l, index) => (
           <Link

@@ -22,7 +22,7 @@ const Hero = () => {
         <h1 className="p-3 lg:text-6xl text-4xl font-extrabold">
           Compassionate care for your loved ones
         </h1>
-        <p className="lg:text-xl p-3 font-afacad">
+        <p className="lg:text-xl p-4 font-afacad">
           At our foster care service, we prioritize the well-being and happiness
           of the elderly. Join us in creating a nurturing environment that feels
           like home.

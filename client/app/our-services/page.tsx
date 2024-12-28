@@ -21,7 +21,7 @@ const ServicesPage = () => {
     {
       name: "Meal Preparation and Nutrition Support",
       description:
-        "Ensuring members&apos; care givers plan and prepare nutritious meals based on members' dietary needs and preferences, ensuring they receive adequate nutrition for their health and well-being.",
+        "Ensuring members' care givers plan and prepare nutritious meals based on members' dietary needs and preferences, ensuring they receive adequate nutrition for their health and well-being.",
     },
     {
       name: "Social and Recreational Activities",
@@ -112,7 +112,7 @@ const ServicesPage = () => {
   ];
   return (
     <>
-      <SecondNav />
+      <SecondNav page='Our Services'/>
       <section className="flex-1 bg-gray-100 lg:px-14 px-4 lg:pt-24 pt-12">
         <h1 className="lg:text-5xl text-xl mt-6 font-extrabold text-center text-green-700">
           Our Services
