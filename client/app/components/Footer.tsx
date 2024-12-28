@@ -37,14 +37,14 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="md:h-[200px] h-screen px-7 bg-green-800 flex max-md:flex-col justify-evenly md:items-center text-white pb-7">
+    <footer className="md:h-[200px] h-screen w-full px-7 bg-green-800 flex max-md:flex-col justify-evenly md:items-center text-white pb-7">
       <Link href={"/"}>
         <div className="flex flex-col items-center gap-10 justify-between">
           <Image src="/logo.png" alt="Legacy AFC" width={200} height={80} />
           <h1 className='font-extralight text-sm'>&copy;LEGACY AFC 2024. ALL RIGHTS RESERVED</h1>
         </div>
       </Link>
-      <div className="grid gap-3 h-[100px] pt-4 w-[300px] justify-items-start mb-12">
+      <div className="grid gap-3 h-[100px] lg:pt-10 pt-4 w-[300px] justify-items-start mb-12">
         <div className="flex items-center gap-2">
           <FiPhone />
           <h1>+1-860-994-8220</h1>

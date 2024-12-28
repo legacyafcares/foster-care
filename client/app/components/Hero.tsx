@@ -5,7 +5,7 @@ import React from "react";
 
 const Hero = () => {
   const router = useRouter();
-  const handleClick = () => router.push("#services");
+  const handleClick = () => router.push("/our-services");
   return (
     <div className="relative flex-1">
       <video

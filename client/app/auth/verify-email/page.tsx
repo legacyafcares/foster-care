@@ -67,18 +67,18 @@ const VerifyEmailPage = () => {
   }, [code, handleSubmit]);
 
   return (
-    <section className='w-screen min-h-screen lg:flex lg:items-center lg:justify-center'>
-      <div className='max-w-md w-[80%] lg:w-full bg-slate-300 bg-opacity-50 backdrop-filter backdrop-blur-xl rounded-2xl shadow-xl overflow-hidden mx-auto my-24'>
+    <section className='w-full min-h-screen flex items-center justify-center'>
+      <div className='max-w-lg w-[80%] lg:w-full bg-slate-300 bg-opacity-50 backdrop-filter backdrop-blur-xl rounded-2xl shadow-xl overflow-hidden mx-auto my-24'>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className='bg-green-200 bg-opacity-50 backdrop-filter backdrop-blur-xl rounded-2xl shadow-2xl p-8 w-full max-w-md'
+          className='bg-green-200 bg-opacity-50 backdrop-filter backdrop-blur-xl rounded-2xl shadow-2xl p-8 w-full max-w-lg'
         >
-          <h2 className='text-3xl font-bold mb-6 text-center bg-gradient-to-r from-green-900 to-green-700 text-transparent bg-clip-text'>
+          <h2 className='lg:text-4xl text-2xl font-bold mb-6 text-center bg-gradient-to-r from-green-900 to-green-700 text-transparent bg-clip-text font-afacad'>
             Verify Your Email
           </h2>
-          <p className='text-center text-green-800 mb-6'>
+          <p className='text-center text-green-800 mb-6 lg:text-xl'>
             Enter the 6-digit code sent to your email address.
           </p>
           <form onSubmit={handleSubmit} className='space-y-6'>

@@ -31,7 +31,7 @@ const SectionThree = () => {
             {cards.map((c,index) => (
                 <Card key={index} className='lg:h-[300px] h-fit lg:w-[400px] flex flex-col'>
                     <CardHeader>
-                        <h1 className='lg:text-2xl font-extrabold'>{c.main}</h1>
+                        <h1 className='lg:text-2xl font-extrabold text-green-700'>{c.main}</h1>
                     </CardHeader>
                     <CardBody className='font-afacad'>
                         <p>{c.p}</p>
