@@ -25,10 +25,10 @@ const Navbar = () => {
       name: "About Us",
       url: "/about-us",
     },
-    // {
-    //   name: "Contact Us",
-    //   url: "#contact",
-    // },
+    {
+      name: "Blog",
+      url: "/blog",
+    },
   ];
   return (
     <div className="flex justify-between items-center py-2 md:py-4 lg:px-16 px-4 absolute z-10 text-white w-full">
