@@ -33,12 +33,12 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center py-2 md:py-4 lg:px-16 px-4 absolute z-10 text-white w-full">
       <Link href={"/"}>
-        <div className="max-md:w-[50px] max-md:h-[50px] max-lg:w-[60px] max-lg:h-[60px] flex items-center justify-center">
+        <div className="h-[60px] max-md:w-[50px] max-md:h-[50px] max-lg:w-[60px] max-lg:h-[60px] flex items-center justify-center">
           <Image
-            src="/logo.png"
+            src="/logo-white.png"
             alt="Legacy AFC"
-            width={90}
-            height={90}
+            width={160}
+            height={160}
             // className="w-auto h-auto"
           />
           {/* <h1 className='lg:text-2xl max-lg:hidden font-bold'>Legacy AFC</h1> */}

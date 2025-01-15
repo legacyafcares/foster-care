@@ -32,8 +32,8 @@ const Navbar = ({page}: SecondNavProps) => {
   return (
     <div className="flex justify-between items-center py-2 md:py-4 lg:px-16 px-4 absolute z-10 text-green-700 w-full">
       <Link href={"/"}>
-        <div className="flex items-center justify-center max-md:w-[50px] max-md:h-[50px] max-lg:w-[60px] max-lg:h-[60px]">
-          <Image src="/logo.png" alt="Legacy AFC" width={90} height={90} />
+        <div className="flex items-center justify-center max-md:w-[50px] max-md:h-[50px] max-lg:w-[60px] max-lg:h-[60px] h-[50px]">
+          <Image src="/logo-white.png" alt="Legacy AFC" width={160} height={160} />
           {/* <h1 className='lg:text-2xl max-lg:hidden font-bold'>Legacy AFC</h1> */}
         </div>
       </Link>
