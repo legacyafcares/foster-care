@@ -1,9 +1,4 @@
-import {
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-} from "@chakra-ui/react";
+import { Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { LuMenuSquare } from "react-icons/lu";
 import Link from "next/link";
 import React from "react";
@@ -33,9 +28,9 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center py-2 md:py-4 lg:px-16 px-4 absolute z-10 text-white w-full">
       <Link href={"/"}>
-        <div className="h-[60px] max-md:w-[50px] max-md:h-[50px] max-lg:w-[60px] max-lg:h-[60px] flex items-center justify-center">
+        <div className="h-[60px] max-md:w-[100px] max-md:h-[60px] max-lg:w-[120px] max-lg:h-[60px] flex items-center justify-center">
           <Image
-            src="/logo-white.png"
+            src="/logo-yellow.png"
             alt="Legacy AFC"
             width={160}
             height={160}
@@ -54,7 +49,7 @@ const Navbar = () => {
             {l.name}
           </Link>
         ))}
-        <ContactModal page={'Home'}/>
+        <ContactModal page={"Home"} />
       </div>
       {/* <div>
         <h1 className="lg:text-md md:text-sm font-bold ml-6 max-md:hidden font-afacad">
@@ -74,7 +69,7 @@ const Navbar = () => {
                 </MenuItem>
               </Link>
             ))}
-            <SecondContactModal page={'Home'}/>
+            <SecondContactModal page={"Home"} />
           </MenuList>
         </Menu>
       </div>

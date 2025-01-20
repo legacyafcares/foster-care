@@ -10,7 +10,7 @@ export interface SecondNavProps {
   page: string;
 }
 
-const Navbar = ({page}: SecondNavProps) => {
+const Navbar = ({ page }: SecondNavProps) => {
   const navlinks = [
     {
       name: "Home",
@@ -21,8 +21,8 @@ const Navbar = ({page}: SecondNavProps) => {
       url: "/our-services",
     },
     {
-        name: 'About Us',
-        url: '/about-us'
+      name: "About Us",
+      url: "/about-us",
     },
     {
       name: "Blog",
@@ -32,8 +32,13 @@ const Navbar = ({page}: SecondNavProps) => {
   return (
     <div className="flex justify-between items-center py-2 md:py-4 lg:px-16 px-4 absolute z-10 text-green-700 w-full">
       <Link href={"/"}>
-        <div className="flex items-center justify-center max-md:w-[50px] max-md:h-[50px] max-lg:w-[60px] max-lg:h-[60px] h-[50px]">
-          <Image src="/logo-white.png" alt="Legacy AFC" width={160} height={160} />
+        <div className="flex items-center justify-center max-md:w-[100px] max-md:h-[50px] max-lg:w-[120px] max-lg:h-[60px] h-[50px]">
+          <Image
+            src="/logo-yellow.png"
+            alt="Legacy AFC"
+            width={160}
+            height={160}
+          />
           {/* <h1 className='lg:text-2xl max-lg:hidden font-bold'>Legacy AFC</h1> */}
         </div>
       </Link>
@@ -47,7 +52,7 @@ const Navbar = ({page}: SecondNavProps) => {
             {l.name}
           </Link>
         ))}
-        <ContactModal page={page}/>
+        <ContactModal page={page} />
       </div>
       {/* <div>
         <h1 className="lg:text-md md:text-sm font-bold ml-6 max-md:hidden font-afacad">
