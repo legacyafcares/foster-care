@@ -41,7 +41,7 @@ const BlogPage = () => {
   return (
     <>
       <SecondNav page="blog" />
-      <section className="px-16 pt-28 min-h-screen">
+      <section className="lg:px-16 pt-28 min-h-screen">
         <h1 className="text-4xl font-extrabold text-green-600 mb-4 text-center">
           Blog
         </h1>
@@ -55,7 +55,7 @@ const BlogPage = () => {
               </CardHeader>
               <Stack>
                 <CardBody>
-                  <p className="text-lg">{content.description}</p>
+                  <p className="lg:text-lg">{content.description}</p>
                 </CardBody>
                 <CardFooter>
                   <button

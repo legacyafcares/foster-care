@@ -7,8 +7,8 @@ const Article1 = () => {
   return (
     <>
       <SecondNav page="article-1" />
-      <section className="px-16 pt-28 min-h-screen">
-        <div className="w-3/5 p-4 mx-auto">
+      <section className="lg:px-16 lg:pt-28 pt-14 min-h-screen">
+        <div className="lg:w-3/5 p-4 mx-auto">
           <div>
             <Image src={'/verify.jpg'} alt='Legacy AFC' width={800} height={800} className="object-cover rounded-md mb-8"/>
           </div>
