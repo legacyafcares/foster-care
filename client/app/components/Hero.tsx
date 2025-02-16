@@ -17,7 +17,7 @@ const Hero = () => {
       />
 
       {/* Overlay with a dark gradient */}
-      <div className="absolute top-0 left-0 size-[100%] lg:bg-gradient-to-l lg:from-black/90 lg:to-black/30 bg-gradient-to-b from-black/50 to-black/90" />
+      <div className="absolute top-0 left-0 size-[100%]" />
       <div className="absolute md:top-[200px] xl:top-[250px] md:ml-[100px] lg:ml-[600px] top-[150px] flex flex-col items-start justify-center p-4 md:w-3/4 lg:w-1/2 lg:right-0 text-white">
         <h1 className="p-3 lg:text-6xl text-4xl font-extrabold">
           Compassionate care for your loved ones
