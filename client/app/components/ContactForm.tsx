@@ -18,6 +18,9 @@ const ContactForm = () => {
       try {
         e.preventDefault()
         await axios.post("https://foster-care.onrender.com/auth/add-to-db")
+        setName = ''
+        setEmail = ''
+        setMessage = ''  
       } catch (error) {
         console.log(error)        
       }
