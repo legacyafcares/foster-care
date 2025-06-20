@@ -6,9 +6,9 @@ import Image from 'next/image'
 import axios from 'axios'
 
 const ContactForm = () => {
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
 
     const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => setName(e.target.value) 
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value) 
@@ -17,10 +17,10 @@ const ContactForm = () => {
     const handleSubmit = async (e: React.FormEvent) => {
       try {
         e.preventDefault()
-        await axios.post("https://foster-care.onrender.com/auth/add-to-db")
-        setName('')
-        setEmail('')
-        setMessage('')  
+        await axios.post("https://foster-care.onrender.com/auth/add-to-db", {name, email, message})
+        setName("")
+        setEmail("")
+        setMessage("")  
       } catch (error) {
         console.log(error)        
       }
